@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Domestic Dice</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+
+    <div id="loading-screen">
+
+        <h1>Loading Domestic Dice...</h1>
+
+    </div>
+
+
+
+    <!-- Main Content -->
+
+    <div id="main-content" class="hidden">
+                    
+        <!-- Chat Box -->
+
+         <div id="chat-box">
+
+            <h2>Chat</h2>
+        
+            <div id="chat-messages"></div>
+        
+            <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="sendMessage(event)">
+                        
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        
+            </div>
+
+        <div class="container">
+
+
+            <!-- Dice Roller -->
+
+            <div id="dice-roller">
+
+                <h1>Good Luck on Your Rolls!</h1>
+
+                <p>Click a button to roll a die.</p>
+
+
+
+                <div class="dice-container">
+
+                    <div id="dice" class="dice">
+
+                        <div class="dot one"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <button onclick="rollDice(6)">Roll d6</button>
+
+                <button onclick="rollDice(8)">Roll d8</button>
+
+                <button onclick="rollDice(10)">Roll d10</button>
+
+                <button onclick="rollDice(12)">Roll d12</button>
+
+                <p id="result">Result: -</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f4f4f4;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    height: 100vh;
+
+}
+
+
+
+/* Loading Screen */
+
+#loading-screen {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #000;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 24px;
+
+}
+
+/* Hide content initially */
+
+.hidden {
+
+    display: none;
+
+}
+
+/* Adjust container to spread elements */
+.container {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full height */
+    margin-left: 25%; /* Offset by chatbox width */
+    width: 100%; /* Take up remaining space */
+}
+
+/* Position chatbox on the left side */
+#chat-box {
+    width: 25%; /* Adjust width if needed */
+    background: white;
+    padding: 10px;
+    border-right: 2px solid #ccc;
+    height: 100vh; /* Full height */
+    position: fixed; /* Fix it to the left */
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Extend chat messages to fill space */
+#chat-messages {
+    flex-grow: 1; /* Takes up all available space */
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Position chat input at the bottom */
+#chat-input {
+    width: calc(100%-20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+/* Send Button */
+#send-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Dice Roller */
+
+#dice-roller {
+    width: 100%; /* Adjust width as needed */
+    max-width: 1200px; /* Limit width */
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button {
+
+    padding: 10px;
+
+    margin: 5px;
+
+    border: none;
+
+    background-color: #a70b46;
+
+    color: #ffe200;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+    background-color: #0056b3;
+
+}
+
+
+
+#result {
+
+    font-size: 20px;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* Dice Styling */
+
+.dice-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin: 20px 0;
+
+}
+
+
+
+.dice {
+
+    width: 60px;
+
+    height: 60px;
+
+    background-color: white;
+
+    border: 2px solid black;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    transition: transform 0.5s ease-in-out;
+
+}
+
+
+
+.dot {
+
+    width: 15px;
+
+    height: 15px;
+
+    background-color: black;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+}
+
+
+
+.one  { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.two  { top: 20%; left: 20%; }
+
+.three { top: 20%; right: 20%; }
+
+.four  { bottom: 20%; left: 20%; }
+
+.five  { bottom: 20%; right: 20%; }
+
+.six   { top: 50%; left: 50%; transform: translate(-50%, -50%); }
