@@ -68,18 +68,16 @@ body {
     justify-content: center; /* Center content */
     align-items: center; /* Vertically center */
     height: 100vh; /* Full height */
-    margin-left: 25%; /* Offset by chatbox width */
+    padding: 32px;
     width: 100%; /* Take up remaining space */
 }
 
 /* Position chatbox on the left side */
 #chat-box {
-    width: 25%; /* Adjust width if needed */
     background: white;
     padding: 10px;
     border-right: 2px solid #ccc;
     height: 100vh; /* Full height */
-    position: fixed; /* Fix it to the left */
     left: 0;
     top: 0;
     display: flex;
@@ -246,3 +244,8 @@ button:hover {
 .five  { bottom: 20%; right: 20%; }
 
 .six   { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.main-content {
+    display: flex;
+    width: 100%;
+}
