@@ -70,6 +70,8 @@ body {
     height: 100vh; /* Full height */
     padding: 32px;
     width: 100%; /* Take up remaining space */
+    z-index: 1;
+    opacity: 100%;
 }
 
 /* Position chatbox on the left side */
@@ -127,7 +129,7 @@ body {
     width: 100%; /* Adjust width as needed */
     max-width: 1200px; /* Limit width */
     text-align: center;
-    background: white;
+    background: rgb(255, 255, 255) opacity(100%);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -143,9 +145,9 @@ button {
 
     border: none;
 
-    background-color: #a70b46;
+    background-color: #ca0707;
 
-    color: #ffe200;
+    color: #fbff00;
 
     font-size: 16px;
 
@@ -201,8 +203,6 @@ button:hover {
 
     border-radius: 10px;
 
-    display: flex;
-
     flex-wrap: wrap;
 
     justify-content: center;
@@ -235,17 +235,34 @@ button:hover {
 
 .one  { top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-.two  { top: 20%; left: 20%; }
+.two  { top: 2%; left: 1%; }
 
-.three { top: 20%; right: 20%; }
+.three { top: 2%; right: -1%; }
 
-.four  { bottom: 20%; left: 20%; }
+.four  { bottom: 2%; left: -1%; }
 
-.five  { bottom: 20%; right: 20%; }
+.five  { bottom: 1%; right: -2%; }
 
 .six   { top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-.main-content {
+#main-content {
     display: flex;
     width: 100%;
+}
+
+#video-background {
+    position:absolute;
+    top: 150px;
+    left: 1000px;
+    transform: translate(-50%, -50%);
+    border: none;
+    pointer-events: none;
+}
+
+#catan {
+    position: absolute;
+    bottom: -50px;
+    left: 1000px;
+    transform: translate(-50%, -50%);
+    border: none;
 }

@@ -31,9 +31,21 @@
     <!-- Main Content -->
 
     <div id="main-content" class="hidden">
-                    
+        <div id="video-background" class="hidden">
+            <img 
+                alt="File:Monopoly game logo.svg" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Monopoly_game_logo.svg/720px-Monopoly_game_logo.svg.png?20120629065935" 
+                decoding="async" 
+                width="720" 
+                height="216">
+        </div>
+        <div id="catan" class="hidden">
+            <img alt="Catan game logo" src="Catan.png"
+            decoding="async"
+            width="720" 
+            height="150">
+        </div>
         <!-- Chat Box -->
-
          <div id="chat-box">
 
             <h2>Chat</h2>
@@ -51,7 +63,7 @@
 
             <!-- Dice Roller -->
 
-            <div id="dice-roller">
+            <div id="dice-roller" class="hidden">
 
                 <h1>Good Luck on Your Rolls!</h1>
 
@@ -71,13 +83,13 @@
 
 
 
-                <button onclick="rollDice(6)">Roll d6</button>
+                <button onclick="rollDice(6)">6-Sided Dice</button>
 
-                <button onclick="rollDice(8)">Roll d8</button>
+                <button onclick="rollDice(8)">8-Sided Dice</button>
 
-                <button onclick="rollDice(10)">Roll d10</button>
+                <button onclick="rollDice(10)">10-Sided Dice</button>
 
-                <button onclick="rollDice(12)">Roll d12</button>
+                <button onclick="rollDice(12)">12-Sided Dice</button>
 
                 <p id="result">Result: -</p>
 
