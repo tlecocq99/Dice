@@ -7,6 +7,9 @@ window.onload = function() {
         document.getElementById("loading-screen").style.display = "none";
 
         document.getElementById("main-content").classList.remove("hidden");
+         document.getElementById("dice-roller").classList.remove("hidden");
+         document.getElementById("video-background").classList.remove("hidden");
+         document.getElementById("catan").classList.remove("hidden")
 
     }, 2000); // 2 seconds loading delay
 
